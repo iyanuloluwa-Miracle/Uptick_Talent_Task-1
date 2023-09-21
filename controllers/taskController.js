@@ -48,6 +48,8 @@ exports.updateTaskById = async (req, res) => {
     }
 };
 
+
+
 // Delete a task by ID
 exports.deleteTaskById = async (req, res) => {
     try {
@@ -55,9 +57,10 @@ exports.deleteTaskById = async (req, res) => {
       if (!task) {
         return res.status(404).json({ error: 'Task not found' });
       }
-      res.status(204).send(); // 204 No Content status
+      res.status(204).json({ message: 'Task deleted successfully' });
     } catch (error) {
       res.status(500).json({ error: 'Server error' });
     }
-};
+  };
+  
   

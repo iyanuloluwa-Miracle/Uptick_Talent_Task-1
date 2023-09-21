@@ -7,7 +7,7 @@ The Task Management API allows you to create, retrieve, update, and delete tasks
 
 ## Base URL
 
-The base URL for all API endpoints is: `https://your-api-url.com/api`
+The base URL for all API endpoints is: `http://localhost:3000/api`
 
 ## Endpoints
 
@@ -17,7 +17,7 @@ The base URL for all API endpoints is: `https://your-api-url.com/api`
 - **Description:** Create a new task.
 - **Request:**
   - **Method:** POST
-  - **URL:** `https://your-api-url.com/api/tasks`
+  - **URL:** `http://localhost:3000/api/tasks`
   - **Headers:**
     - `Content-Type: application/json`
   - **Request Body:**
@@ -50,7 +50,7 @@ The base URL for all API endpoints is: `https://your-api-url.com/api`
 - **Description:** Retrieve a list of all tasks.
 - **Request:**
   - **Method:** GET
-  - **URL:** `https://your-api-url.com/api/tasks`
+  - **URL:** `http://localhost:3000/api/tasks`
 - **Response:**
   - **Status:** 200 OK
   - **Response Body:**
@@ -81,7 +81,7 @@ The base URL for all API endpoints is: `https://your-api-url.com/api`
 - **Description:** Retrieve a single task by its unique identifier (`id`).
 - **Request:**
   - **Method:** GET
-  - **URL:** `https://your-api-url.com/api/tasks/task_id_1`
+  - **URL:** `http://localhost:3000/api/tasks/task_id_1`
 - **Response:**
   - **Status:** 200 OK
   - **Response Body:**
@@ -102,7 +102,7 @@ The base URL for all API endpoints is: `https://your-api-url.com/api`
 - **Description:** Update a task by its unique identifier (`id`).
 - **Request:**
   - **Method:** PUT
-  - **URL:** `https://your-api-url.com/api/tasks/task_id_1`
+  - **URL:** `http://localhost:3000/api/tasks/task_id_1`
   - **Headers:**
     - `Content-Type: application/json`
   - **Request Body:**
@@ -131,7 +131,7 @@ The base URL for all API endpoints is: `https://your-api-url.com/api`
 - **Description:** Delete a task by its unique identifier (`id`).
 - **Request:**
   - **Method:** DELETE
-  - **URL:** `https://your-api-url.com/api/tasks/task_id_1`
+  - **URL:** `http://localhost:3000/api/tasks/task_id_1`
 - **Response:**
   - **Status:** 204 No Content
   - **Response Body:** No content is returned upon successful deletion.
